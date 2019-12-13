@@ -1,0 +1,276 @@
+@mixin buttonstyle {
+  display: block;
+  width: 100px;
+  height: 40px;
+  border-color: $left-gradient-color;
+  background-color: $left-gradient-color;
+
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+@mixin refstyle {
+  color: white;
+  margin-left: 15%;
+  display: inline-block;
+  font-size: 25px;
+}
+@function setcolor($color) {
+  @return $color;
+}
+
+body {
+  background-color: setcolor($bodybgcolor);
+  .header {
+    .header-wrap {
+      font-family: "Fresca", sans-serif;
+      display: block;
+      height: 550px;
+      background-image: url($header-img);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: center center;
+      border-radius: 0px 0px 600px/250px 0px;
+      padding-left: 150px;
+      padding-top: 30px;
+
+      .landing-logo {
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        display: flex;
+        p {
+          color: $head-text-color;
+          font-weight: bold;
+          text-align: center;
+          margin: 0px;
+          padding-left: 20px;
+          display: block;
+          span {
+            font-weight: 100;
+            display: block;
+          }
+        }
+      }
+
+      .header_heading {
+        font-size: 50px;
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: bold;
+        width: 400px;
+        line-height: 50px;
+        color: $head-text-color;
+        position: relative;
+      }
+
+      .header_heading::after {
+        @extend .header_heading;
+        content: "awesome";
+        background-color: $selectcolor;
+        top: -50px;
+      }
+
+      .header_text {
+        width: 600px;
+        font-size: 18px;
+        font-family: "Source Sans Pro", sans-serif;
+        line-height: 25px;
+        color: $head-text-color;
+      }
+
+      div {
+        display: flex;
+        .header_button {
+          margin-top: 65px;
+          @include buttonstyle;
+        }
+        .login {
+          margin-top: 65px;
+          @include refstyle();
+        }
+      }
+    }
+  }
+  .section {
+    display: block;
+    .section_text {
+      position: relative;
+      color: $bgcolor1;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
+      font-size: 40px;
+      text-align: center;
+      display: block;
+    }
+    .section_text::before {
+      @extend .section_text;
+      background-color: $selectcolor;
+      width: 185px;
+      left: 625px;
+      bottom: -49px;
+      content: "adventure";
+    }
+
+    .section_card_wrap {
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 100px;
+      width: 800px;
+      display: block;
+
+      .section_card {
+        border-radius: 5px;
+        display: flex;
+        margin-bottom: 10px;
+        background-color: $bgcolor1;
+
+        .section_card_img {
+          margin: 10px;
+          width: 400px;
+
+          border-radius: 5px;
+        }
+        .section_card_right_container {
+          display: block;
+          width: 550px;
+
+          font-family: "Source Sans Pro", sans-serif;
+          margin-left: auto;
+          margin-right: auto;
+          color: white;
+          padding-top: auto;
+          padding-bottom: auto;
+
+          .section_card_heading {
+            margin-top: 40px;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+          }
+          .section_card_text {
+            padding-left: 30px;
+            padding-right: 30px;
+            text-align: left;
+            font-size: 14px;
+          }
+          .section_link {
+            display: block;
+            color: white;
+            text-align: center;
+            padding-bottom: 5%;
+          }
+        }
+      }
+    }
+  }
+
+  .section_banner {
+    width: 830px;
+    
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    position: relative;
+    bottom: -50px;
+    height: 100px;
+    background: linear-gradient(90deg, $left-gradient-color, $right-gradient-color);
+    border-radius: 7px;
+    .section_banner_text_wrap {
+      display: block;
+      
+      margin-left: 120px;
+      .section_banner_heading {
+        font-family: "Hind", sans-serif;
+        font-weight: 700;
+        font-size: 25px;
+        
+        color: $bgcolor1;
+        display: blpock;
+        margin-top: 5x;
+      }
+
+      .section_banner_text {
+        
+        display: block;
+        font-family: "Hind", sans-serif;
+        font-size: 13px;
+        color: white;
+        margin-top: -20px;
+      }
+    }
+    .section_banner_button {
+      display: flex;
+      margin: auto;
+      @include buttonstyle();
+    }
+  }
+  .section_banner::before {
+    font-family: "Hind", sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: $bgcolor1;
+    display: blpock;
+    margin-top: 5x;
+    background-color: $selectcolor;
+    height: 35px;
+    position: relative;
+    top: 25px;
+    left: 275px;
+    content: "start";
+  }
+
+  .footer {
+    background-color: $bgcolor1;
+    .footer-wrap {
+      font-family: "Fresca", sans-serif;
+
+      color: white;
+      padding-left: auto;
+      padding-right: auto;
+      display: flex;
+      background-color: $bgcolor1;
+      padding-top: 80px;
+      .landing-logo {
+        padding-left: 100px;
+        text-align: center;
+        width: 33%;
+        height: 80px;
+        display: flex;
+        
+        img {
+          padding-top: 10px;
+          width: 60px;
+          height: 60px;
+        }
+        p {
+          display: block;
+          margin-right: 5px;
+          padding-top: 7px;
+          span {
+            width: 100px;
+            display: block;
+          }
+        }
+      }
+      .footer_text {
+        display: block;
+        padding: 30px;
+        width: 30%;
+        font-family: 'Hind', sans-serif;
+        font-size: 15px;
+        line-height: 20px;
+        margin-top: -20px;
+      }
+      .footer-cr {
+        width: 33%;
+        border: 0px solid green;
+        text-align: center;
+        padding-top: 20px;
+        font-family: 'Hind', sans-serif;
+        font-size: 15px;
+      }
+    }
+  }
+}
