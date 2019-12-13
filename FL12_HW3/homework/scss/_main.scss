@@ -69,6 +69,7 @@ body {
         @extend .header_heading;
         content: "awesome";
         background-color: $selectcolor;
+        background-size:  60px;
         top: -50px;
       }
 
@@ -140,8 +141,7 @@ body {
           margin-left: auto;
           margin-right: auto;
           color: white;
-          padding-top: auto;
-          padding-bottom: auto;
+         
 
           .section_card_heading {
             margin-top: 40px;
@@ -187,8 +187,8 @@ body {
         font-size: 25px;
         
         color: $bgcolor1;
-        display: blpock;
-        margin-top: 5x;
+        
+        margin-top: 5px;
       }
 
       .section_banner_text {
@@ -211,12 +211,12 @@ body {
     font-weight: 700;
     font-size: 25px;
     color: $bgcolor1;
-    display: blpock;
-    margin-top: 5x;
+    display: block;
+    margin-top: 5px;
     background-color: $selectcolor;
     height: 35px;
     position: relative;
-    top: 25px;
+    
     left: 275px;
     content: "start";
   }
@@ -227,8 +227,7 @@ body {
       font-family: "Fresca", sans-serif;
 
       color: white;
-      padding-left: auto;
-      padding-right: auto;
+      
       display: flex;
       background-color: $bgcolor1;
       padding-top: 80px;
@@ -274,3 +273,4 @@ body {
     }
   }
 }
+
