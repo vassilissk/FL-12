@@ -37,6 +37,7 @@ body {
     body .header .header-wrap .header_heading::after {
       content: "awesome";
       background-color: #ff4e33;
+      background-size: 60px;
       top: -50px; }
     body .header .header-wrap .header_text {
       width: 600px;
@@ -99,9 +100,7 @@ body {
           font-family: "Source Sans Pro", sans-serif;
           margin-left: auto;
           margin-right: auto;
-          color: white;
-          padding-top: auto;
-          padding-bottom: auto; }
+          color: white; }
           body .section .section_card_wrap .section_card .section_card_right_container .section_card_heading {
             margin-top: 40px;
             font-size: 20px;
@@ -135,8 +134,7 @@ body {
         font-weight: 700;
         font-size: 25px;
         color: #3b3f50;
-        display: blpock;
-        margin-top: 5x; }
+        margin-top: 5px; }
       body .section_banner .section_banner_text_wrap .section_banner_text {
         display: block;
         font-family: "Hind", sans-serif;
@@ -159,12 +157,11 @@ body {
     font-weight: 700;
     font-size: 25px;
     color: #3b3f50;
-    display: blpock;
-    margin-top: 5x;
+    display: block;
+    margin-top: 5px;
     background-color: #ff4e33;
     height: 35px;
     position: relative;
-    top: 25px;
     left: 275px;
     content: "start"; }
   body .footer {
@@ -172,8 +169,6 @@ body {
     body .footer .footer-wrap {
       font-family: "Fresca", sans-serif;
       color: white;
-      padding-left: auto;
-      padding-right: auto;
       display: flex;
       background-color: #3b3f50;
       padding-top: 80px; }
