@@ -1,0 +1,231 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+
+body {
+  font-family: roboto;
+}
+.post-1 {
+  background: #9d27b0;
+}
+.post-2 {
+  background: #9bb800;
+}
+.post-3 {
+  background: #ed5120;
+}
+.post-4 {
+  background: #9d27b0;
+}
+.post-5 {
+  background: #2d95bb;
+}
+
+/* Your styles go here */
+@media screen and (max-width: 1400px) {
+  .body {
+    background-color: #0b192f;
+    margin-top: 0;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+
+  .header,
+  .footer {
+    display: flex;
+    align-items: center;
+    background-color: #024161;
+    width: 100%;
+    height: 11vh;
+  }
+  .left-side {
+    display: flex;
+    font-size: 2em;
+    font-weight: lighter;
+    color: #fff;
+    width: 70%;
+    margin-left: 3%;
+  }
+  .left-side .logo-right {
+    color: #9d27b0;
+  }
+  .nav {
+    margin-right: 7%;
+    display: flex;
+
+    width: 40%;
+    justify-content: center;
+    height: 11vh;
+    align-items: center;
+  }
+  .nav .nav-item-link {
+    display: flex;
+    height: inherit;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 4%;
+    padding-right: 4%;
+    margin: 1%;
+  }
+  .nav .nav-item-link:hover {
+    background-color: #1f52a4;
+    transition: all 1s ease-in-out;
+  }
+
+  .awesome {
+    margin: 2% auto;
+    width: 100%;
+    display: flex;
+    background-image: url(../img/post0.jpg);
+    background-position: center bottom;
+    height: 33vw;
+    color: #fff;
+  }
+  .awesome .description {
+    padding-bottom: 5%;
+    padding-left: 3%;
+    align-self: flex-end;
+    line-height: 2em;
+    width: 65%;
+  }
+  .awesome .description .title {
+    font-size: 3em;
+    font-weight: lighter;
+    padding-bottom: 2%;
+  }
+  .main-body {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .articles {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 70vw;
+  }
+  .articles .articles-item {
+    display: flex;
+  }
+  .articles .articles-item .articles-img {
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .articles .articles-item .articles-img::before {
+    content: "  ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background: inherit;
+    opacity: 0.5;
+    z-index: 1;
+  }
+}
+.articles .articles-item .articles-wrap {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.articles-link {
+  display: flex;
+  font-size: 2em;
+  text-decoration: none;
+}
+.articles-header {
+  font-weight: lighter;
+  color: #fff;
+}
+.articles-wrap post-1 {
+  display: flex;
+}
+.the-wrap {
+  display: flex;
+  padding: 5%;
+  flex-direction: column;
+  justify-content: center;
+}
+.articles-text {
+  display: flex;
+  margin: 0 auto;
+  font-size: 0.9em;
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+.articles-date {
+  display: flex;
+  flex-direction: column;
+  padding: 3%;
+}
+.day {
+  font-size: 3em;
+  font-weight: lighter;
+}
+.month {
+  font-size: 1.5em;
+  margin-top: 20%;
+  font-weight: lighter;
+}
+.news {
+  width: 25%;
+  display: flex;
+}
+
+.articles .articles-item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.articles .articles-item:nth-child(even) > .articles-wrap {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.articles .final {
+  display: flex;
+  margin: 2% auto;
+  width: 100%;
+}
+.articles .final .articles-wrap {
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.articles .final .articles-wrap .the-wrap {
+  display: flex;
+  padding: 0px;
+  margin-left: 5%;
+}
+
+.final .articles-wrap .articles-link {
+  display: flex;
+}
+.final .articles-wrap .articles-link .articles-header {
+  margin: 0%;
+}
+
+.footer {
+  flex-direction: row;
+  color: #fff;
+  line-height: 2em;
+  justify-content: space-around;
+  width: 100%;
+}
+.footer .left-side {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+}
+.footer .right-side {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  align-self: flex-end;
+}
+@media screen and (max-width: 768px) {}
+@media screen and (max-width: 480px) {}
