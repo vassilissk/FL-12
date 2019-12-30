@@ -17,9 +17,7 @@ if (!new_game) {
     do {
         continue_game = false
         let number = parseInt(Math.round(Math.random() * max_range + min_range))
-        console.log(number)
-        console.log(max_range, possible_prize)
-
+            
         for (let i = 0; i < total_attempts; i++) {
             let user_num = parseInt(prompt('Choose a roulette pocket number from ' + min_range + ' to ' +
                 max_range + '\n' +
@@ -57,7 +55,6 @@ if (!new_game) {
             possible_prize *= two
             continue
         }
-        console.log(max_range, possible_prize)
         if (new_game) {
             min_range = 0
             max_range = eight
@@ -65,11 +62,8 @@ if (!new_game) {
             possible_prize = one_hundred
             continue
         } else {
-            //alert('Thank you for your participation. Your prize is: ' + total_prize + '$')
             break
         }
     }
     while (continue_game || new_game)
-    console.log(guess_result, continue_game, new_game)
-
 }
