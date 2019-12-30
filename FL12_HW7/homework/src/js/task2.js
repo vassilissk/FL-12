@@ -11,13 +11,10 @@ let min_range = 0,
 if (!new_game) {
     alert('You did not become a billionaire, but can.')
 } else {
-
-
-
     do {
         continue_game = false
         let number = parseInt(Math.round(Math.random() * max_range + min_range))
-            
+        
         for (let i = 0; i < total_attempts; i++) {
             let user_num = parseInt(prompt('Choose a roulette pocket number from ' + min_range + ' to ' +
                 max_range + '\n' +
@@ -55,6 +52,7 @@ if (!new_game) {
             possible_prize *= two
             continue
         }
+        
         if (new_game) {
             min_range = 0
             max_range = eight
@@ -62,6 +60,7 @@ if (!new_game) {
             possible_prize = one_hundred
             continue
         } else {
+            
             break
         }
     }
