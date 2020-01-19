@@ -98,15 +98,6 @@ function battle(fighter1, fighter2) {
     }
 }
 
-const first = new Fighter({ name: 'Maximus', damage: 25, hp: 100, strength: 20, agility: 15 })
-const second = new Fighter({ name: 'Commodus', damage: 25, hp: 90, strength: 25, agility: 20 })
 
-
-
-
-battle(first, second);
-battle(first, second)
-first.logCombatHistory();
-second.logCombatHistory();
 
 
